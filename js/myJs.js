@@ -17,10 +17,10 @@ function firstQuestion(){
     Swal.fire({
         title: 'He luu cậu!',
         text: 'Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.',
-        imageUrl: '../img/cr7.jpg',
+        imageUrl: './img/cr7.jpg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("https://github.com/Aslicr7/ro3/blob/master/img/iput-bg.jpg")',
+        background: '#fff url("./img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         backdrop: 
         
@@ -38,7 +38,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('https://aslicr7.github.io/ro5/sound/nope.mp3');
+    var audio = new Audio('./sound/nope.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -51,7 +51,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('https://aslicr7.github.io/ro5/sound/Swish1.mp3');
+    var audio = new Audio('./sound/Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
@@ -105,10 +105,10 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/siuu1.mp3');
+    var audio = new Audio('./sound/siuu1.mp3');
     
     
-var audio1=new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/siuu.mp3');
+var audio1=new Audio('./sound/siuu.mp3');
    
     setTimeout(() => {
         audio1.play();
@@ -123,7 +123,7 @@ var audio1=new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/siuu.mp3'
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("https://aslicr7.github.io/ro5/img/iput-bg.jpg")',
+        background: '#fff url("./img/iput-bg.jpg")',
        
         // backdrop: 
         
