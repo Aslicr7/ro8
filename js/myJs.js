@@ -162,7 +162,7 @@ var audio2=new Audio('./sound/siuu.mp3');
 
                 confirmButtonText: 'Okiiiii lun <3',
                 cancelButtonText: "Thôi ngại lém :<<",
-                background: '#fff url("../img/iput-bg.jpg")',
+                background: '#fff url("./img/iput-bg.jpg")',
                 title: 'Tớ biết mà ^^ Yêu cậu 300.000',
                 text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Nếu đồng ý thì inbox cho tớ đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
