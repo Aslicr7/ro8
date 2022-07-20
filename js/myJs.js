@@ -34,6 +34,8 @@ function firstQuestion(){
       }).then(function(){
         var audio = new Audio('./sound/zo.mp3');
     audio.play();
+       var audio1 = new Audio('./sound/sound.mp3');
+    audio1.play();
         $('.content').show(200);
         
       })
