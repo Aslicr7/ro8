@@ -20,7 +20,7 @@ function firstQuestion(){
         imageUrl: '../img/cr7.jpg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("../img/iput-bg.jpg")',
+        background: '#fff url("https://github.com/Aslicr7/ro3/blob/master/img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         backdrop: 
         
@@ -38,7 +38,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('../sound/nope.mp3');
+    var audio = new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/nope.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -51,7 +51,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('../sound/Swish1.mp3');
+    var audio = new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
