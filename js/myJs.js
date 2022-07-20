@@ -105,10 +105,10 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('../sound/siuu1.mp3');
+    var audio = new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/siuu1.mp3');
     
     
-var audio1=new Audio('../sound/siuu.mp3');
+var audio1=new Audio('https://github.com/Aslicr7/ro3/blob/master/sound/siuu.mp3');
    
     setTimeout(() => {
         audio1.play();
@@ -123,7 +123,7 @@ var audio1=new Audio('../sound/siuu.mp3');
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("../img/iput-bg.jpg")',
+        background: '#fff url("https://github.com/Aslicr7/ro3/blob/master/img/iput-bg.jpg")',
         
         // backdrop: 
         
