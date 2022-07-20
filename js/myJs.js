@@ -32,7 +32,10 @@ function firstQuestion(){
               
             `,
       }).then(function(){
+        var audio = new Audio('./sound/zo.mp3');
+    audio.play();
         $('.content').show(200);
+        
       })
 }
 
@@ -105,24 +108,26 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
+    var audio1 = new Audio('./sound/tick.mp3');
+    audio1.play();
     var audio = new Audio('./sound/siuu1.mp3');
     
     
-var audio1=new Audio('./sound/siuu.mp3');
+var audio2=new Audio('./sound/siuu.mp3');
    
     setTimeout(() => {
-        audio1.play();
+        audio2.play();
       }, 2000)
     //audio.play();
    
    
    
     Swal.fire({
-        title: 'Hãy nói lí do cậu chọn a Rô đi :vvvv',
+        title: 'Ohhh, cậu cũng nghĩ là Ronaldo à (>_<)',
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy?'>",
         background: '#fff url("./img/iput-bg.jpg")',
        
         // backdrop: 
@@ -147,6 +152,8 @@ var audio1=new Audio('./sound/siuu.mp3');
         
     }).then((result) => {
         if (result.value) {
+            var audio = new Audio('./sound/click.mp3');
+    audio.play();
             Swal.fire({
                 width: 900,
         showCancelButton: true,
@@ -157,10 +164,12 @@ var audio1=new Audio('./sound/siuu.mp3');
                 cancelButtonText: "Thôi ngại lém :<<",
                 background: '#fff url("../img/iput-bg.jpg")',
                 title: 'Tớ biết mà ^^ Yêu cậu 300.000',
-                text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
+                text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Nếu đồng ý thì inbox cho tớ đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
                 //onClose: () => {
                       }).then((result) => {
+                        var audio = new Audio('./sound/click.mp3');
+                        audio.play();
                         if (result.value) {
                     window.location = 'http://messenger.com';
                   }})
